@@ -53,37 +53,49 @@ export default function Home() {
       </section>
 
       {/* DARK TEXT SECTION */}
-      <section className="bg-[#2B2B2B] text-white px-10 py-16">
-        <h2 className="text-3xl mb-6">Lorem ipsum dolor</h2>
+      <section className="bg-[#2B2B2B] text-white border-[16px] border-[#2B2B2B] px-8 py-16">
+        <div>
+          <h2
+            style={{ fontFamily: "var(--font-mono)" }}
+            className="text-3xl mb-6"
+          >
+            Lorem ipsum dolor
+          </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 leading-6 text-lg">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
-            erat tempor, fringilla nunc vitae, laoreet velit. Suspendisse eu
-            odio.
-          </p>
-          <p>
-            dapibus molestie nec quis ipsum. Pellentesque pretium finibus
-            vulputate. Praesent et urna ultricies, varius ipsum eget, iaculis
-            ante. Pellentesque quis mi tempus elit lobortis cursus. Etiam vel
-            sollicitudin elit, nec fringilla nibh. Aenean convallis enim justo,
-            nec lobortis velit molestie vitae. Integer ac erat iaculis, blandit
-            orci fermentum, ullamcorper augue. Suspendisse vel massa
-            sollicitudin, varius lectus eu, rhoncus nisi. Fusce ullamcorper diam
-            at lectus cursus efficitur.
-          </p>
-          <p>
-            Morbi ornare sagittis dui, at dictum nulla bibendum non. Nullam
-            rhoncus quam metus, id bibendum justo ultricies et. Integer nec nisl
-            turpis. Nunc eget pulvinar urna. Duis mattis porttitor semper. Nam
-            sollicitudin odio et urna consectetur, dignissim tempor eros
-            dapibus. Duis a tortor et mauris egestas interdum. Vivamus sed
-            tortor ultricies, efficitur diam et, pulvinar ligula. Ut ac rhoncus
-            erat, eget rhoncus neque. Fusce eu fermentum est. Nam fermentum
-            tincidunt est, eget tempus ex convallis nec. Ut felis nulla,
-            consequat ac lorem quis, dapibus cursus magna. Nunc sed lacus
-            nuleros.
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-lg leading-6">
+            <div className="space-y-4">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                ac erat tempor, fringilla nunc vitae, laoreet velit. Suspendisse
+                eu odio.
+              </p>
+              <p>
+                Dapibus molestie nec quis ipsum. Pellentesque pretium finibus
+                vulputate. Praesent et urna ultricies, varius ipsum eget,
+                iaculis ante. Pellentesque quis mi tempus elit lobortis cursus.
+                Etiam vel sollicitudin elit, nec fringilla nibh. Aenean
+                convallis enim justo, nec lobortis velit molestie vitae. Integer
+                ac erat iaculis, blandit orci fermentum, ullamcorper augue.
+                Suspendisse vel massa sollicitudin, varius lectus eu, rhoncus
+                nisi. Fusce ullamcorper diam at lectus cursus efficitur.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <p>
+                Morbi ornare sagittis dui, at dictum nulla bibendum non. Nullam
+                rhoncus quam metus, id bibendum justo ultricies et. Integer nec
+                nisl turpis. Nunc eget pulvinar urna. Duis mattis porttitor
+                semper. Nam sollicitudin odio et urna consectetur, dignissim
+                tempor eros dapibus. Duis a tortor et mauris egestas interdum.
+                Vivamus sed tortor ultricies, efficitur diam et, pulvinar
+                ligula. Ut ac rhoncus erat, eget rhoncus neque. Fusce eu
+                fermentum est. Nam fermentum tincidunt est, eget tempus ex
+                convallis nec. Ut felis nulla, consequat ac lorem quis, dapibus
+                cursus magna. Nunc sed lacus nuleros.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
