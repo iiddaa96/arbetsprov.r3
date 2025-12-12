@@ -1,23 +1,19 @@
-import type { Metadata } from "next";
+// app/layout.tsx
 import { DM_Mono, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const dmMono = DM_Mono({
-  subsets: ["latin"],
-  weight: ["300", "400", "500"],
-  variable: "--font-mono",
-});
-
+// Definiera Google Fonts
 const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["400", "700"],
   variable: "--font-sans",
 });
 
-export const metadata: Metadata = {
-  title: "House",
-  description: "Generated House website",
-};
+const dmMono = DM_Mono({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-mono",
+});
 
 export default function RootLayout({
   children,
@@ -25,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="sv" className={`${dmMono.variable} ${dmSans.variable}`}>
-      <body className="bg-white">{children}</body>
+    <html lang="en" className={`${dmSans.variable} ${dmMono.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }

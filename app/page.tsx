@@ -16,17 +16,26 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/30" />
 
         {/* Header */}
-        <div className="absolute top-6 left-6 text-white text-xl font-[var(--font-mono)]">
+        <div
+          style={{ fontFamily: "var(--font-sans)" }}
+          className="absolute top-6 left-6 text-white text-5xl"
+        >
           House
         </div>
 
-        <div className="absolute top-6 right-6 text-white text-3xl font-[var(--font-mono)] cursor-pointer">
+        <div
+          style={{ fontFamily: "var(--font-mono)" }}
+          className="absolute top-6 right-6 text-white text-3xl cursor-pointer"
+        >
           ☰
         </div>
 
         {/* Hero text */}
-        <div className="absolute right-10 top-1/3 text-white max-w-[350px] font-[var(--font-mono)]">
-          <h2 className="text-[34px] font-medium text-primary-foreground leading-tight mb-6">
+        <div className="absolute right-10 top-1/3 text-white max-w-[350px]">
+          <h2
+            style={{ fontFamily: "var(--font-mono)" }}
+            className="text-[34px] font-medium text-primary-foreground leading-tight mb-6"
+          >
             Unika hus i en unik miljö
           </h2>
           <p className="text-sm mb-6">
@@ -34,7 +43,10 @@ export default function Home() {
             erat tempor, fringilla nunc vitae, laoreet velit. Suspendisse eu
             tortor eu odio dapibus molestie nec quis ipsum.
           </p>
-          <button className="bg-[#1e1e1e] text-white py-2.5 px-5 text-sm font-[var(--font-sans)]">
+          <button
+            style={{ fontFamily: "var(--font-sans)" }}
+            className="bg-[#1e1e1e] text-white py-2.5 px-5 text-sm"
+          >
             LÄS MER
           </button>
         </div>
@@ -76,58 +88,85 @@ export default function Home() {
       </section>
 
       {/* IMAGE CARDS */}
-      <section className="px-10 py-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* CARD 1 */}
-        <div>
-          <p className="text-white bg-black/60 px-2 py-1 inline-block mb-2 font-[var(--font-mono)]">
-            Våra hus
-          </p>
+      <section className="bg-background">
+        <div className="w-full">
+          <div className="grid md:grid-cols-2">
+            {/* Card 1 - Våra hus */}
+            <div className="relative group overflow-hidden">
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <Image
+                  src="/house.png"
+                  alt="Våra hus"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="absolute inset-0 flex flex-col justify-between p-6 z-10">
+                <h3
+                  style={{ fontFamily: "var(--font-mono)" }}
+                  className="text-lg md:text-xl text-white"
+                >
+                  Våra hus
+                </h3>
+                <div className="flex justify-end">
+                  <button
+                    style={{ fontFamily: "var(--font-mono)" }}
+                    className="px-8 py-3 bg-primary-foreground bg-white text-black font-medium hover:bg-primary-foreground/90 transition-colors tracking-wider text-sm"
+                  >
+                    VÅRA HUS
+                  </button>
+                </div>
+              </div>
+            </div>
 
-          <div className="relative border border-blue-400 h-64">
-            <Image
-              src="/house.png"
-              alt="House 1"
-              fill
-              style={{ objectFit: "cover" }}
-            />
+            {/* Card 2 - Tillval */}
+            <div className="relative group overflow-hidden">
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <Image
+                  src="/house.png"
+                  alt="Tillval"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+              <div className="absolute inset-0 flex flex-col justify-between p-6 z-10">
+                <h3
+                  style={{ fontFamily: "var(--font-mono)" }}
+                  className="text-lg md:text-xl text-white"
+                >
+                  Tillval
+                </h3>
+                <div className="flex justify-end">
+                  <button
+                    style={{ fontFamily: "var(--font-mono)" }}
+                    className="px-8 py-3 bg-primary-foreground bg-white text-black font-medium hover:bg-primary-foreground/90 transition-colors tracking-wider text-sm"
+                  >
+                    LÄS MER
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <button className="mt-4 bg-white px-5 py-2 text-sm font-[var(--font-sans)]">
-            VÅRA HUS
-          </button>
-        </div>
-
-        {/* CARD 2 */}
-        <div>
-          <p className="text-white bg-black/60 px-2 py-1 inline-block mb-2 font-[var(--font-mono)]">
-            Tillval
-          </p>
-
-          <div className="relative border border-gray-400 h-64">
-            <Image
-              src="/house.png"
-              alt="House 2"
-              fill
-              style={{ objectFit: "cover" }}
-            />
-          </div>
-
-          <button className="mt-4 bg-white px-5 py-2 text-sm font-[var(--font-sans)]">
-            LÄS MER
-          </button>
         </div>
       </section>
 
       {/* FOOTER */}
       <footer className="relative bg-[#111] text-white px-10 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="space-y-2 mt-4 font-[var(--font-sans)]">
+          <div
+            style={{ fontFamily: "var(--font-sans)" }}
+            className="space-y-2 mt-4"
+          >
             <p>Våra hus</p>
             <p>Tillval</p>
             <p>Hållbarhet</p>
           </div>
 
-          <div className="flex flex-col gap-4 text-footer-foreground/80 text-[15px] max-w-xs text-left font-dm-sans md:ml-auto">
+          <div
+            style={{ fontFamily: "var(--font-sans)" }}
+            className="flex flex-col gap-4 text-footer-foreground/80 text-[15px] max-w-xs text-left md:ml-auto"
+          >
             <p>
               Morbi ornare sagittis dui, at dictum nulla bibendum non. Nullam
               rhoncus quam metus, id bibendum justo ultricies et. Integer nec
@@ -139,8 +178,11 @@ export default function Home() {
         <div className="m-35"></div>
 
         {/* Big background word */}
-        <div className="absolute bottom-0 left-0 right-0 h-[60%] overflow-hidden pointer-events-none select-none">
-          <span className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-[50%] text-[120px] md:text-[200px] lg:text-[280px] font-dm-sans text-white/[0.07] uppercase tracking-wider whitespace-nowrap">
+        <div
+          style={{ fontFamily: "var(--font-sans)" }}
+          className="absolute bottom-0 left-0 right-0 h-[60%] overflow-hidden pointer-events-none select-none"
+        >
+          <span className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-[50%] text-[120px] md:text-[200px] lg:text-[280px] text-white/[0.07] uppercase tracking-wider whitespace-nowrap">
             House
           </span>
         </div>
