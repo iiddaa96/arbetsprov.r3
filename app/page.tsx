@@ -103,7 +103,7 @@ export default function Home() {
       <section className="bg-background">
         <div className="w-full">
           <div className="grid md:grid-cols-2">
-            {/* Card 1 - Våra hus */}
+            {/* Card 1 */}
             <div className="relative group overflow-hidden">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
@@ -131,7 +131,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Card 2 - Tillval */}
+            {/* Card 2 */}
             <div className="relative group overflow-hidden">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image

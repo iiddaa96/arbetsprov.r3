@@ -1,8 +1,6 @@
-// app/layout.tsx
 import { DM_Mono, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-// Definiera Google Fonts
 const dmSans = DM_Sans({
   subsets: ["latin"],
   weight: ["400", "700"],
