@@ -4,7 +4,8 @@ export default function Home() {
   return (
     <main className="w-full">
       {/* HERO */}
-      <section className="relative w-full h-[600px]">
+      <section className="relative min-h-screen w-full">
+        {/* Background Image */}
         <Image
           src="/house.png"
           alt="house"
@@ -30,47 +31,46 @@ export default function Home() {
           ☰
         </div>
 
-        {/* Hero text */}
-        <div className="absolute right-10 top-1/3 text-white max-w-[350px]">
-          <h2
-            style={{ fontFamily: "var(--font-mono)" }}
-            className="text-[34px] font-medium text-primary-foreground leading-tight mb-6"
-          >
-            Unika hus i en unik miljö
-          </h2>
-          <p className="text-sm mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
-            erat tempor, fringilla nunc vitae, laoreet velit. Suspendisse eu
-            tortor eu odio dapibus molestie nec quis ipsum.
-          </p>
-          <button
-            style={{ fontFamily: "var(--font-sans)" }}
-            className="bg-[#1e1e1e] text-white py-2.5 px-5 text-sm"
-          >
-            LÄS MER
-          </button>
+        {/* Hero Content */}
+        <div className="relative z-[5] flex items-center justify-end min-h-screen px-6 md:px-16 lg:px-24">
+          <div className="max-w-lg text-right md:text-left md:mr-0 lg:mr-12">
+            <h2
+              style={{ fontFamily: "var(--font-mono)" }}
+              className="text-[34px] font-medium text-white leading-tight mb-6"
+            >
+              Unika hus i en unik miljö
+            </h2>
+            <p className="text-white mb-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation.
+            </p>
+            <button className="px-8 py-3 bg-[#2B2B2B] text-white font-dm-sans font-medium hover:bg-[#1c1b1b] transition-colors tracking-wider text-sm">
+              LÄS MER
+            </button>
+          </div>
         </div>
       </section>
 
       {/* DARK TEXT SECTION */}
-      <section className="bg-[#2B2B2B] text-white border-[16px] border-[#2B2B2B] px-8 py-16">
-        <div>
+      <section className="bg-[#2B2B2B] text-white py-16 md:py-24 px-6 md:px-16 lg:px-24">
+        <div className="max-w-6xl mx-auto">
           <h2
             style={{ fontFamily: "var(--font-mono)" }}
-            className="text-3xl mb-6"
+            className="text-3xl md:text-4xl lg:text-5xl font-medium text-dark-section-foreground mb-6 text-center md:text-left"
           >
             Lorem ipsum dolor
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-lg leading-6">
-            <div className="space-y-4">
-              <p>
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+            <div className="text-dark-section-foreground/90 leading-relaxed">
+              <p className="mb-8">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                 ac erat tempor, fringilla nunc vitae, laoreet velit. Suspendisse
                 eu odio.
               </p>
               <p>
-                Dapibus molestie nec quis ipsum. Pellentesque pretium finibus
+                dapibus molestie nec quis ipsum. Pellentesque pretium finibus
                 vulputate. Praesent et urna ultricies, varius ipsum eget,
                 iaculis ante. Pellentesque quis mi tempus elit lobortis cursus.
                 Etiam vel sollicitudin elit, nec fringilla nibh. Aenean
@@ -81,8 +81,8 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="space-y-4">
-              <p>
+            <div className="text-dark-section-foreground/90 leading-relaxed">
+              <p className="mb-4">
                 Morbi ornare sagittis dui, at dictum nulla bibendum non. Nullam
                 rhoncus quam metus, id bibendum justo ultricies et. Integer nec
                 nisl turpis. Nunc eget pulvinar urna. Duis mattis porttitor
