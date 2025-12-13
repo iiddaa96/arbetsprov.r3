@@ -32,7 +32,7 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-[5] flex items-center justify-end min-h-screen px-6 md:px-16 lg:px-24">
+        <div className="relative z-5 flex items-center justify-end min-h-screen px-6 md:px-16 lg:px-24">
           <div className="max-w-lg text-right md:text-left md:mr-0 lg:mr-12">
             <h2
               style={{ fontFamily: "var(--font-mono)" }}
@@ -105,13 +105,8 @@ export default function Home() {
           <div className="grid md:grid-cols-2">
             {/* Card 1 */}
             <div className="relative group overflow-hidden">
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
-                  src="/house.png"
-                  alt="Våra hus"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                />
+              <div className="relative aspect-4/3 overflow-hidden">
+                <Image src="/house.png" alt="Våra hus" fill />
               </div>
               <div className="absolute inset-0 flex flex-col justify-between p-6 z-10">
                 <h3
@@ -123,7 +118,7 @@ export default function Home() {
                 <div className="flex justify-end">
                   <button
                     style={{ fontFamily: "var(--font-mono)" }}
-                    className="px-8 py-3 bg-primary-foreground bg-white text-black font-medium hover:bg-primary-foreground/90 transition-colors tracking-wider text-sm"
+                    className="px-8 py-3 bg-primary-foreground bg-white text-black font-medium hover:hover:bg-[#e2e2e2] transition-colors tracking-wider text-sm"
                   >
                     VÅRA HUS
                   </button>
@@ -133,15 +128,10 @@ export default function Home() {
 
             {/* Card 2 */}
             <div className="relative group overflow-hidden">
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
-                  src="/house.png"
-                  alt="Tillval"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                />
+              <div className="relative aspect-4/3 overflow-hidden">
+                <Image src="/house.png" alt="Tillval" fill />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent" />
               <div className="absolute inset-0 flex flex-col justify-between p-6 z-10">
                 <h3
                   style={{ fontFamily: "var(--font-mono)" }}
@@ -152,7 +142,7 @@ export default function Home() {
                 <div className="flex justify-end">
                   <button
                     style={{ fontFamily: "var(--font-mono)" }}
-                    className="px-8 py-3 bg-primary-foreground bg-white text-black font-medium hover:bg-primary-foreground/90 transition-colors tracking-wider text-sm"
+                    className="px-8 py-3 bg-primary-foreground bg-white text-black font-medium hover:bg-[#e2e2e2] transition-colors tracking-wider text-sm"
                   >
                     LÄS MER
                   </button>
