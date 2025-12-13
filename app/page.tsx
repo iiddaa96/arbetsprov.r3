@@ -156,10 +156,10 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="relative bg-[#111] text-white px-10 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0">
           <div
             style={{ fontFamily: "var(--font-sans)" }}
-            className="space-y-2 mt-4"
+            className="space-y-2 mt-4 md:mt-4"
           >
             <p>Våra hus</p>
             <p>Tillval</p>
@@ -168,7 +168,7 @@ export default function Home() {
 
           <div
             style={{ fontFamily: "var(--font-sans)" }}
-            className="flex flex-col gap-4 text-footer-foreground/80 text-[15px] max-w-xs text-left md:ml-auto"
+            className="flex flex-col gap-4 text-footer-foreground/80 text-[15px] md:max-w-xs text-left md:ml-auto"
           >
             <p>
               Morbi ornare sagittis dui, at dictum nulla bibendum non. Nullam
