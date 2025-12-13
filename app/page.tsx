@@ -32,20 +32,21 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-5 flex items-center justify-end min-h-screen px-6 md:px-16 lg:px-24">
-          <div className="max-w-lg text-right md:text-left md:mr-0 lg:mr-12">
+        <div className="relative z-5 flex items-center justify-end min-h-screen px-6 sm:px-8 md:px-16 lg:px-24">
+          <div className="max-w-100 sm:max-w-112.5 md:max-w-125">
             <h2
               style={{ fontFamily: "var(--font-mono)" }}
-              className="text-[34px] font-medium text-white leading-tight mb-6"
+              className="text-[28px] sm:text-[32px] md:text-[34px]  font-medium text-white leading-[1.2] mb-4 sm:mb-5 md:mb-6"
             >
-              Unika hus i en unik miljö
+              Unika hus i<br />
+              en unik miljö
             </h2>
-            <p className="text-white mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation.
+            <p className="text-white text-[13px] sm:text-[14px] md:text-[15px] leading-relaxed mb-6 sm:mb-7 md:mb-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
+              erat tempor, fringilla nunc vitae, laoreet velit. Suspendisse eu
+              tortor eu odio dapibus molestie nec quis ipsum.
             </p>
-            <button className="px-8 py-3 bg-[#2B2B2B] text-white font-dm-sans font-medium hover:bg-[#1c1b1b] transition-colors tracking-wider text-sm">
+            <button className="px-6 sm:px-7 md:px-8 py-2.5 sm:py-3 bg-[#2B2B2B] text-white font-dm-sans font-medium hover:bg-[#1c1b1b] transition-colors tracking-wider text-xs sm:text-sm">
               LÄS MER
             </button>
           </div>
