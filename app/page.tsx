@@ -185,7 +185,7 @@ export default function Home() {
           style={{ fontFamily: "var(--font-sans)" }}
           className="absolute bottom-0 left-0 right-0 h-[60%] overflow-hidden pointer-events-none select-none"
         >
-          <span className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-[50%] text-[120px] md:text-[200px] lg:text-[280px] text-white/[0.07] uppercase tracking-wider whitespace-nowrap">
+          <span className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-[50%] text-[120px] md:text-[28rem] text-white/[0.07] uppercase tracking-wider whitespace-nowrap">
             House
           </span>
         </div>
